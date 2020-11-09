@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+  .image{
+float: left;
+
+}
+.container {
+  position: relative;
+  width: 30%;
+  padding: 10px;
+  margin-left: 100px;
+  margin-bottom: 150px;
+  margin-top: 10px;
+
+}
+.container:hover {
+  position: relative;
+
+
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+img {
+  border: 10px solid white;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+/* Header/Blog Title */
+.header {
+  padding: 100px;
+  text-align: center;
+  background: white;
+  background-image: linear-gradient(to bottom right, darkblue, white);
+}
+.header h1 {
+  font-size: 50px;
+}
+/* Style the top navigation bar */
+#topnav {
+  background-color: #404040;
+  color: white;
+  margin-top: 15px;
+}
+
+
+#topnav ul {
+list-style-type: none;
+text-align: center;
+margin: 0px;
+padding: 0px;
+border-radius: 5px;
+}
+/* Style the topnav links */
+#topnav li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Change color on hover */
+#topnav li:hover {
+  background-color: #737373;
+}
+#topnav li {
+display: inline-block;
+padding: 15px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+
+}
+
+h2 {
+  text-align: center;
+}
+h3 {
+  font-size: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+#footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+
+}
+
+
+
+#footer ul {
+list-style-type: none;
+text-align: center;
+margin: 0px;
+padding: 0px;
+border-radius: 5px;
+}
+/* Style the topnav links */
+#footer li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Change color on hover */
+#footer li:hover {
+  background-color: #737373;
+}
+#footer li {
+display: inline-block;
+padding: 15px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
